@@ -50,12 +50,12 @@ SELECT
     name,
     (case
 		when weekday = 1 then 'Monday'
-	    when weekday = 2 then 'Tuesday'
-	    when weekday = 3 then 'Wednesday'
-	    when weekday = 4 then 'Thursday'
-	    when weekday = 5 then 'Friday'
-	    when weekday = 6 then 'Saturday'
-	    when weekday = 7 then 'Sunday'
+	    when weekday = 2 then 'tuesday'
+	    when weekday = 3 then 'wednesday'
+	    when weekday = 4 then 'thursday'
+	    when weekday = 5 then 'friday'
+	    when weekday = 6 then 'saturday'
+	    when weekday = 7 then 'sunday'
     end) as weekday,
     SUM(inc) AS income
 FROM tab
